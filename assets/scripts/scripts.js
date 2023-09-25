@@ -18,7 +18,13 @@ function startGame() {
 
 
 function setNextQuestion(){
+    resetState()
     showQuestion(shuffledQuestions[currentQuestionIndex])
+    
+}
+
+function showQuestion(question){
+    questionElement.innerText = question.question
     question.answers.forEach(answer =>{
         const button = document.createElement('button')
         button.innerText = answer.text
@@ -26,13 +32,23 @@ function setNextQuestion(){
         if (answer.correct) {
             button.dataset.correct = answer.correct
         }
+        button.addEventListener('click', selectAnswer)
+        answerButtonsElement.appendChild(button)
     })
 }
 
-function showQuestion(question){
-    questionElement.innerText = question.question
+
+function resetState(){
+    nextButton.classList.add('hide')
+    while(answerButtonsElement.firstChild){
+        answerButtonsElement.removeChild
+        (answerButtonsElement.firstChild)
+    }
 }
 
+function selectAnswer(e){
+
+}
 
 
 const questions = [
