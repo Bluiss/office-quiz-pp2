@@ -15,10 +15,13 @@
 
   }
 
+/* header styling */
   #header{
     position: absolute;
     top: 50px;
   }
+
+/* intro flex styling */
 
   .wrapper{
     display: flex;
@@ -37,6 +40,14 @@
     background-color: black;
     color: white;
     border-radius: 24px;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+
+    &:hover{
+        transform: translateY(-3px);
+        transition: 500ms ease all;
+        cursor: pointer;
+
+    }
   }
 
 .wrapper h2{
@@ -52,3 +63,14 @@
         border: 1px solid;
       }
   }
+
+
+
+  a:link, a:visited {
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
