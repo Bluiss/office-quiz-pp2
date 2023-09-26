@@ -59,8 +59,8 @@ function resetState(){
 
 //select answer
 function selectAnswer(e){
-    const sleectedButton = e.target
-    const correct = sleectedButton.dataset.correct
+    const selectedButton = e.target
+    const correct = selectedButton.dataset.correct
     setStatusClass(document.body, correct)
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
@@ -76,19 +76,33 @@ function selectAnswer(e){
 }
 
 //set wrong or correct function
-function setStatusClass(element, correct){
-    clearStatusClass(element)
+function giveAnswer(correct){
     if(correct){
-        console.log("correct")
+        incrementCorrect()
     } else{
-        element.classList.add('wrong')
+        incrementWrong()
     }
 }
 
-function clearStatusClass(element){
-    element.classList.remove('correct')
-    element.classList.remove('wrong')
+
+/**
+ * Gets the current score from the DOM and increments it by 1
+ */
+
+function incrementCorrect(){
+
+    let previousScore = parseInt(document.getElementById('correct-score').innerText)
+    document.getElementById('correct-score').innerText = ++previousScore;
 }
+
+function incrementWrong(){
+
+    let previousScore = parseInt(document.getElementById('wrong-score').innerText)
+    document.getElementById('wrong-score').innerText = ++previousScore;
+}
+
+
+
 
 
 // list of questions
