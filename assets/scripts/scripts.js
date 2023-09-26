@@ -76,7 +76,7 @@ function selectAnswer(e){
 function setStatusClass(element, correct){
     clearStatusClass(element)
     if(correct){
-        element.classList.add('correct')
+        console.log("correct")
     } else{
         element.classList.add('wrong')
     }
@@ -127,14 +127,60 @@ const questions = [
         ]
       },
       {
-      question: 'Who won "Hottest in the Office" at Michaels last Dundies?',
+      question: "Kelly gave out what as party favors at her America's Got Talent finale party?",
         answers: [
-          { text: 'Danny Cordray', correct: true },
-          { text: 'Jim Halpert', correct: false },
-          { text: 'Ryan Howard', correct: false },
-          { text: 'Michael Scott', correct: false }
+          { text: 'Coffee Mugs', correct: true },
+          { text: 'Hello Kitty Laptop Covers', correct: false },
+          { text: 'Fleece Blankets', correct: false },
+          { text: 'Key Chains', correct: false }
         ]
     },
-      
+    {
+        question: "Schrute boys must learn how many rules before the age of 5?",
+          answers: [
+            { text: '40', correct: true },
+            { text: '30', correct: false },
+            { text: '50', correct: false },
+            { text: '60', correct: false }
+          ]
+      },
+      {
+        question: "Who came in first place in the Michael Scott's Dunder Mifflin Scranton Meredith Palmer Memorial Celebrity Rabies Awareness Pro-Am Fun Run Race for the Cure?",
+          answers: [
+            { text: 'Toby Flenderson', correct: true },
+            { text: 'Michael Scott', correct: false },
+            { text: 'Andy Bernard', correct: false },
+            { text: 'Kevin Malone', correct: false }
+          ]
+      },
+      {
+        question: "What does Dwight always keep an extra set of in his car for special occasions?",
+          answers: [
+            { text: 'Berkenstocks', correct: true },
+            { text: 'Ray Bans', correct: false },
+            { text: 'Converse', correct: false },
+            { text: 'Levis', correct: false }
+          ]
+      },
+
+      {
+        question: "Pam and Jim's first kiss took place where?",
+      answers: [
+        { text: 'Dunder Mifflin Office', correct: true },
+        { text: "Chili's", correct: false },
+        { text: 'The Casino Night', correct: false },
+        { text: 'The Booze Cruise', correct: false }
+      ]
+        },
+
+    {
+    question: "What is the name of Dwight's porcupine?",
+  answers: [
+    { text: 'Henrietta', correct: true },
+    { text: "Hermione", correct: false },
+    { text: 'Harper', correct: false },
+    { text: 'Harriet', correct: false }
+  ]
+},
     ]
 
