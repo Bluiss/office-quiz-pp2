@@ -91,36 +91,50 @@ function clearStatusClass(element){
 // list of questions
 const questions = [
     {
-        question: 'what is two + two',
+        question: 'Where does Michael Scott move to start his new life with Holly?',
         answers: [
-            { text: 4, correct: true},
-            { text: 22, correct: false}
+          { text: 'Boulder, Colorado', correct: true },
+          { text: 'Denver, Colorado', correct: false },
+          { text: 'Colorado Springs, Colorado', correct: false },
+          { text: 'Aspen, Colorado', correct: false }
+        ]
+      },
+      {
+        question: "Which of Angela's cats did Dwight kill?",
+        answers: [
+          { text: 'Sprinkles', correct: true },
+          { text: 'Crinklepuss', correct: false },
+          { text: 'Lady Aragorn', correct: false },
+          { text: 'Tinkie', correct: false }
+        ]
+      },
+      {
+        question: "At Phyllis' wedding, Michael revealed that her nickname in high school was what?",
+        answers: [
+          { text: 'Easy Rider', correct: true },
+          { text: 'Chill Voyager', correct: false },
+          { text: 'Free Spirit', correct: false },
+          { text: 'Carefree Roamer', correct: false }
+        ]
+      },
+      {
+        question: 'Who won "Hottest in the Office" at Michaels last Dundies?',
+        answers: [
+          { text: 'Danny Cordray', correct: true },
+          { text: 'Jim Halpert', correct: false },
+          { text: 'Ryan Howard', correct: false },
+          { text: 'Michael Scott', correct: false }
+        ]
+      },
+      {
+      question: 'Who won "Hottest in the Office" at Michaels last Dundies?',
+        answers: [
+          { text: 'Danny Cordray', correct: true },
+          { text: 'Jim Halpert', correct: false },
+          { text: 'Ryan Howard', correct: false },
+          { text: 'Michael Scott', correct: false }
         ]
     },
-    {
-        question: 'Who is the best YouTuber?',
-        answers: [
-          { text: 'Web Dev Simplified', correct: true },
-          { text: 'Traversy Media', correct: true },
-          { text: 'Dev Ed', correct: true },
-          { text: 'Fun Fun Function', correct: true }
-        ]
-      },
-      {
-        question: 'Is web development fun?',
-        answers: [
-          { text: 'Kinda', correct: false },
-          { text: 'YES!!!', correct: true },
-          { text: 'Um no', correct: false },
-          { text: 'IDK', correct: false }
-        ]
-      },
-      {
-        question: 'What is 4 * 2?',
-        answers: [
-          { text: '6', correct: false },
-          { text: '8', correct: true }
-        ]
-      }
+      
     ]
 
