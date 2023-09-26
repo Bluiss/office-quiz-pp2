@@ -76,7 +76,8 @@ function selectAnswer(e){
 }
 
 //set wrong or correct function
-function giveAnswer(correct){
+function setStatusClass(element, correct) {
+  clearStatusClass(element)
     if(correct){
         incrementCorrect()
     } else{
@@ -84,6 +85,10 @@ function giveAnswer(correct){
     }
 }
 
+function clearStatusClass(element) {
+  element.classList.remove('correct')
+  element.classList.remove('wrong')
+}
 
 /**
  * Gets the current score from the DOM and increments it by 1
