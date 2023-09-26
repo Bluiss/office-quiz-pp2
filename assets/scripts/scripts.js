@@ -3,6 +3,7 @@ const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
+const scoresContainer = document.getElementById('score-container')
 
 let shuffledQuestions,currentQuestionIndex
 
@@ -49,6 +50,7 @@ function showQuestion(question){
 function resetState(){
     clearStatusClass(document.body)
     nextButton.classList.add('hide')
+    scoresContainer.classList.add('hide')
     while(answerButtonsElement.firstChild){
         answerButtonsElement.removeChild
         (answerButtonsElement.firstChild)
@@ -65,6 +67,7 @@ function selectAnswer(e){
     })
     if (shuffledQuestions.length > currentQuestionIndex + 1){
         nextButton.classList.remove('hide')
+        scoresContainer.classList.remove('hide')
     } else{
         startButton.innerText = 'restart'
         startButton.classList.remove('hide')

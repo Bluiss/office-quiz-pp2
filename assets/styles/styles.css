@@ -123,5 +123,5 @@
   justify-content: flex-end;
   flex-direction: column;
   border: solid 1px;
-  padding-left: 10px;
+  margin-left: 10px;
 }
