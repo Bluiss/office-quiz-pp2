@@ -4,6 +4,7 @@ const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 const scoresContainer = document.getElementById('score-container')
+const timerContainer = document.getElementById('timer')
 
 let shuffledQuestions,currentQuestionIndex
 
@@ -41,7 +42,8 @@ function showQuestion(question){
         if (answer.correct) {
             button.dataset.correct = answer.correct
         }
-        button.addEventListener('click', selectAnswer)
+        button.removeEventListener('click', selectAnswer);
+        button.addEventListener('click', selectAnswer);
         answerButtonsElement.appendChild(button)
     })
 }
@@ -61,10 +63,7 @@ function resetState(){
 function selectAnswer(e){
     const selectedButton = e.target
     const correct = selectedButton.dataset.correct
-    setStatusClass(document.body, correct)
-    Array.from(answerButtonsElement.children).forEach(button => {
-        setStatusClass(button, button.dataset.correct)
-    })
+      setStatusClass(selectedButton, correct);
     if (shuffledQuestions.length > currentQuestionIndex + 1){
         nextButton.classList.remove('hide')
         scoresContainer.classList.remove('hide')
@@ -76,16 +75,19 @@ function selectAnswer(e){
 }
 
 //set wrong or correct function
-function setStatusClassset(element, correct){
-    clearStatusClass(element)
-    if(correct){
-        incrementCorrect()
-    } else{
-        incrementWrong()
-    }
+function setStatusClass(element, correct) {
+  clearStatusClass(element);
+  if (correct) {
+      element.classList.add('correct');
+      incrementCorrect();
+      console.log('correct')
+  } else {
+      element.classList.add('wrong');
+      incrementWrong();
+  }
 }
 
-function clearStatusClass(element){
+function clearStatusClass(element) {
     element.classList.remove('correct')
     element.classList.remove('wrong')
 }
@@ -118,6 +120,7 @@ let timerId = setInterval(countdown, 1000);
 function countdown(){
     if(timeLeft === 0){
         clearInterval(timerId);
+        countdownDisplay.innerHTML = "Time's up"
     } else{
         countdownDisplay.innerHTML = timeLeft + 'Seconds Left';
         timeLeft--;
@@ -204,8 +207,8 @@ const questions = [
       {
         question: "Pam and Jim's first kiss took place where?",
       answers: [
-        { text: 'Dunder Mifflin Office', correct: true },
-        { text: "Chili's", correct: false },
+        { text: 'Dunder Mifflin Office', correct: false },
+        { text: "Chili's", correct: true },
         { text: 'The Casino Night', correct: false },
         { text: 'The Booze Cruise', correct: false }
       ]
