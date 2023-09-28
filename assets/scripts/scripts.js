@@ -41,8 +41,7 @@ function showQuestion(question){
         if (answer.correct) {
             button.dataset.correct = answer.correct
         }
-        button.removeEventListener('click', selectAnswer);
-        button.addEventListener('click', selectAnswer);
+        button.addEventListener('click', selectAnswer)
         answerButtonsElement.appendChild(button)
     })
 }
@@ -77,8 +76,8 @@ function selectAnswer(e){
 }
 
 //set wrong or correct function
-function setStatusClass(element, correct) {
-  clearStatusClass(element)
+function setStatusClassset(element, correct){
+    clearStatusClass(element)
     if(correct){
         incrementCorrect()
     } else{
@@ -86,9 +85,9 @@ function setStatusClass(element, correct) {
     }
 }
 
-function clearStatusClass(element) {
-  element.classList.remove('correct')
-  element.classList.remove('wrong')
+function clearStatusClass(element){
+    element.classList.remove('correct')
+    element.classList.remove('wrong')
 }
 
 /**
@@ -108,6 +107,22 @@ function incrementWrong(){
 }
 
 
+// countdown timer
+
+
+let timeLeft = 30
+let countdownDisplay = document.getElementById('timer')
+
+let timerId = setInterval(countdown, 1000);
+
+function countdown(){
+    if(timeLeft === 0){
+        clearInterval(timerId);
+    } else{
+        countdownDisplay.innerHTML = timeLeft + 'Seconds Left';
+        timeLeft--;
+    }
+}
 
 
 
