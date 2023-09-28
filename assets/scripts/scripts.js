@@ -122,7 +122,7 @@ function countdown(){
         clearInterval(timerId);
         countdownDisplay.innerHTML = "Time's up"
     } else{
-        countdownDisplay.innerHTML = timeLeft + 'Seconds Left';
+        countdownDisplay.innerHTML = timeLeft +  'Seconds Left';
         timeLeft--;
     }
 }
