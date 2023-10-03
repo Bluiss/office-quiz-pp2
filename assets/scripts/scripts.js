@@ -5,12 +5,14 @@ const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 const scoresContainer = document.getElementById('score-container')
 const timerContainer = document.getElementById('timer')
+const container = document.getElementById('main-container')
+const gameOverDiv = document.getElementById('game-over')
 
 let shuffledQuestions,currentQuestionIndex
 
 
 // start game 
-startButton.addEventListener('click', startGame)
+startButton.addEventListener('click', startGame, countdown)
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++ 
     setNextQuestion()
@@ -21,6 +23,9 @@ function startGame() {
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     questionContainerElement.classList.remove('hide')
+    timerContainer.classList.remove('hide')
+    
+
     setNextQuestion()
   }
 
@@ -80,7 +85,6 @@ function setStatusClass(element, correct) {
   if (correct) {
       element.classList.add('correct');
       incrementCorrect();
-      console.log('correct')
   } else {
       element.classList.add('wrong');
       incrementWrong();
@@ -120,13 +124,19 @@ let timerId = setInterval(countdown, 1000);
 function countdown(){
     if(timeLeft === 0){
         clearInterval(timerId);
-        countdownDisplay.innerHTML = "Time's up"
+        gameOver()
     } else{
         countdownDisplay.innerHTML = timeLeft +  'Seconds Left';
         timeLeft--;
     }
 }
 
+// game over 
+function gameOver(){
+  alert("Better luck next time, you've run out the clock!")
+  gameOverDiv.classList.remove('hide')
+
+}
 
 
 // list of questions

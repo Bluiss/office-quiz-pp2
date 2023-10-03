@@ -11,10 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=DM+Sans:ital,opsz,wght@0,9..40,300;1,9..40,400;1,9..40,800&family=Lato:wght@300&family=Oswald&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+    
+    <div class="game-over" class="hide">
+        <h2>Better luck Next Time</h2>
+        <p>You ran out of time, maybe next time dont be a time thief!</p>
+        <button>Restart</button>
+    </div>
 
-    <div id="timer" class=""></div>
+    <div id="timer" class="hide"></div>
 
-    <div class="container">
+    <div class="container" class="hide" id="main-container">
         <div id="question-container" class="hide">
             <div id="question">Question</div>
             <div id="answer-buttons" class="btn-grid">
@@ -32,10 +38,12 @@
     </div>
     
 
-    <div id="score-container" class="hide" class="">
+    <div id="score-container" class="hide">
         <p class="scores">Correct Answers <span id="correct-score">0</span> </p>
         <p class="scores">Wrong Answers <span id="wrong-score">0</span> </p>
     </div>
+
+  
 
     <script src="assets\scripts\scripts.js"></script>
 </body>
