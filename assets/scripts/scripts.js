@@ -7,6 +7,7 @@ const scoresContainer = document.getElementById('score-container');
 const timerContainer = document.getElementById('timer');
 const container = document.getElementById('main-container');
 const gameOverDiv = document.getElementById('game-over');
+const finalScoreDiv = document.getElementById('final-score')
 
 let shuffledQuestions, currentQuestionIndex;
 
@@ -87,6 +88,7 @@ function selectAnswer(e) {
     } else {
         startButton.innerText = 'restart';
         startButton.classList.remove('hide');
+        finalScore()
     }
     clearInterval(timerId);
 
@@ -143,6 +145,13 @@ function countdown() {
 function gameOver() {
     alert("Better luck next time, you've run out the clock!");
     location.reload();
+
+}
+
+
+// final score
+
+function finalScore(){
 
 }
 
