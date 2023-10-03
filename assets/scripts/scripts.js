@@ -10,6 +10,11 @@ const gameOverDiv = document.getElementById('game-over')
 
 let shuffledQuestions,currentQuestionIndex
 
+let timeLeft = 10
+let countdownDisplay = document.getElementById('timer')
+let timerId = setInterval(countdown, 1000);
+
+
 
 // start game 
 startButton.addEventListener('click', startGame, countdown)
@@ -24,9 +29,8 @@ function startGame() {
     currentQuestionIndex = 0
     questionContainerElement.classList.remove('hide')
     timerContainer.classList.remove('hide')
-    
-
     setNextQuestion()
+    countdown()
   }
 
 
@@ -39,6 +43,8 @@ function setNextQuestion(){
 
 //show next question 
 function showQuestion(question){
+    countdown()
+    clearInterval()
     questionElement.innerText = question.question
     question.answers.forEach(answer =>{
         const button = document.createElement('button')
@@ -115,12 +121,6 @@ function incrementWrong(){
 
 // countdown timer
 
-
-let timeLeft = 30
-let countdownDisplay = document.getElementById('timer')
-
-let timerId = setInterval(countdown, 1000);
-
 function countdown(){
     if(timeLeft === 0){
         clearInterval(timerId);
@@ -134,6 +134,7 @@ function countdown(){
 // game over 
 function gameOver(){
   alert("Better luck next time, you've run out the clock!")
+  location.reload();
   
 }
 
