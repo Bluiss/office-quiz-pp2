@@ -134,8 +134,7 @@ function countdown(){
 // game over 
 function gameOver(){
   alert("Better luck next time, you've run out the clock!")
-  gameOverDiv.classList.remove('hide')
-
+  
 }
 
 
