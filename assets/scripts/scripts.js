@@ -7,7 +7,7 @@ const scoresContainer = document.getElementById('score-container');
 const timerContainer = document.getElementById('timer');
 const container = document.getElementById('main-container');
 const gameOverDiv = document.getElementById('game-over');
-const finalScoreDiv = document.getElementById('final-score')
+const finalScore = document.getElementById('final-score-container')
 
 let shuffledQuestions, currentQuestionIndex;
 
@@ -88,7 +88,8 @@ function selectAnswer(e) {
     } else {
         startButton.innerText = 'restart';
         startButton.classList.remove('hide');
-        finalScore()
+        finalScore.classList.remove('hide');
+        finalScoreTally()
     }
     clearInterval(timerId);
 
@@ -150,9 +151,11 @@ function gameOver() {
 
 
 // final score
+const correctScore = parseInt(document.getElementById('correct-score').innerText);
 
-function finalScore(){
-
+function finalScoreTally() {
+    let totalScore = parseInt(document.getElementById('final-score').innerText);
+    document.getElementById('final-score').innerText = correctScore;
 }
 
 
