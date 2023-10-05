@@ -146,7 +146,7 @@ function countdown() {
 
 // game over 
 function gameOver() {
-    alert("Better luck next time, you've run out the clock!");
+    alert("Time Thief!, you've run out the clock better luck next time");
     location.reload();
 
 }
@@ -154,10 +154,11 @@ function gameOver() {
 
 // final score
 function finalScoreTally() {
+    const tallySecond = "/10"
+
     const correctScore = parseInt(document.getElementById('correct-score').innerText);
     let totalScore = parseInt(document.getElementById('final-score').innerText);
-    document.getElementById('final-score').innerText = correctScore;
-    console.log(correctScore);
+    document.getElementById('final-score').innerText = correctScore + tallySecond;
 }
 
 
