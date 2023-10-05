@@ -153,12 +153,11 @@ function gameOver() {
 
 
 // final score
-const correctScore = parseInt(document.getElementById('correct-score').innerText);
-
 function finalScoreTally() {
+    const correctScore = parseInt(document.getElementById('correct-score').innerText);
     let totalScore = parseInt(document.getElementById('final-score').innerText);
     document.getElementById('final-score').innerText = correctScore;
-    console.log(correctScore)
+    console.log(correctScore);
 }
 
 
