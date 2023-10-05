@@ -8,6 +8,7 @@ const timerContainer = document.getElementById('timer');
 const container = document.getElementById('main-container');
 const gameOverDiv = document.getElementById('game-over');
 const finalScore = document.getElementById('final-score-container')
+const finalMessage = document.getElementById('final-message')
 
 let shuffledQuestions, currentQuestionIndex;
 
@@ -92,6 +93,7 @@ function selectAnswer(e) {
         startButton.classList.remove('hide');
         finalScore.classList.remove('hide');
         finalScoreTally()
+        finalMessageDisplay()
     }
     clearInterval(timerId);
 
@@ -155,10 +157,30 @@ function gameOver() {
 // final score
 function finalScoreTally() {
     const tallySecond = "/10"
-
     const correctScore = parseInt(document.getElementById('correct-score').innerText);
     let totalScore = parseInt(document.getElementById('final-score').innerText);
     document.getElementById('final-score').innerText = correctScore + tallySecond;
+
+}
+
+// final message
+
+const lowScore = "Not good at all, how very impish of you"
+const midScore = "Well, you tried, and that's what counts, right? At least you're not Toby."
+const highScore = "Excellent score, quite Admirable of you"
+
+
+function finalMessageDisplay(){
+    const correctScore = parseInt(document.getElementById('correct-score').innerText);
+
+    if(correctScore <= 3){
+        finalMessage.innerText = lowScore;
+    } else if( correctScore <= 7 ){
+        finalMessage.innerText = midScore;
+    } else{
+        finalMessage.innerText = highScore;
+    }
+
 }
 
 
