@@ -165,7 +165,7 @@ function finalScoreTally() {
 
 // final message
 
-const lowScore = "Not good at all, how very impish of you"
+const lowScore = "Not good at all, how very Impish of you"
 const midScore = "Well, you tried, and that's what counts, right? At least you're not Toby."
 const highScore = "Excellent score, quite Admirable of you"
 
@@ -280,3 +280,4 @@ const questions = [
     },
 ];
 
+git 
