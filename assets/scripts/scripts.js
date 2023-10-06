@@ -88,6 +88,7 @@ function selectAnswer(e) {
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide');
         scoresContainer.classList.remove('hide');
+        finalScore.classList.add('hide')
     } else {
         startButton.innerText = 'restart';
         startButton.classList.remove('hide');
