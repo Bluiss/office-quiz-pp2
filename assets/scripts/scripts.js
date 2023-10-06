@@ -117,9 +117,9 @@ function clearStatusClass(element) {
     element.classList.remove('wrong');
 }
 
-/**
- * Gets the current score from the DOM and increments it by 1
- */
+
+ //Gets the current score from the DOM and increments it by 1
+
 
 function incrementCorrect() {
 
