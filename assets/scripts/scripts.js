@@ -87,6 +87,7 @@ function selectAnswer(e) {
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
     setStatusClass(selectedButton, correct);
+    
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide');
         scoresContainer.classList.remove('hide');
