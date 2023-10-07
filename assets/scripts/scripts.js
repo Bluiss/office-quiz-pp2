@@ -1,6 +1,7 @@
 const startButton = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
 const questionContainerElement = document.getElementById('question-container');
+const conatiner = document.getElementById('main-container')
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
 const scoresContainer = document.getElementById('score-container');
@@ -72,6 +73,7 @@ function showQuestion(question) {
 // reset next question 
 function resetState() {
     clearStatusClass(document.body);
+    finalScore.classList.add('hide')
     nextButton.classList.add('hide');
     scoresContainer.classList.add('hide');
     while (answerButtonsElement.firstChild) {
@@ -185,6 +187,7 @@ function finalMessageDisplay(){
 }
 
 
+
 // list of questions
 const questions = [
     {
@@ -281,4 +284,3 @@ const questions = [
     },
 ];
 
-git 
