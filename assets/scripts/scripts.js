@@ -151,10 +151,25 @@ function countdown() {
 
 // game over 
 function gameOver() {
-    alert("Time Thief!, you've run out the clock better luck next time");
-    location.reload();
-
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops...You ran out of time!',
+        text: 'Next time, dont be a time theif!',
+        type: 'success',
+        showCancelButton: false,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Click here to have another go'
+      }).then((result) => {
+         if(result){
+           location.reload();
+         }
+      
+      })
+      
 }
+
+
 
 
 // final score
