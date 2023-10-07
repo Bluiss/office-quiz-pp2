@@ -181,3 +181,38 @@
     border-radius: 24px;
 
 }
+
+
+
+/* question and button styling */
+
+.info-container{
+  position: absolute; 
+  top: 15px; 
+  left: 10px;
+  display: flex;
+  padding: 1px;
+}
+
+#info + #info-hide {
+  display: none;
+}
+
+#info:hover + #info-hide {
+  display: block;
+  cursor: pointer;
+  text-align: center ;
+}
+
+#info-hide{
+  font-size: 12px;
+  background-color: aliceblue;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+#info-hide p{
+  padding: 10px;
+}
