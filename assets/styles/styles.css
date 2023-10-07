@@ -21,8 +21,11 @@
 
 /* header styling */
   #header{
+    display: flex;
+    justify-content: center;
     position: absolute;
-    top: 50px;
+    top: 10px;
+    
   }
 
 /* intro flex styling */

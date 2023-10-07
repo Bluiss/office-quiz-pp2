@@ -222,8 +222,8 @@ const questions = [
     {
         question: "Which of Angela's cats did Dwight kill?",
         answers: [
-            { text: 'Sprinkles', correct: true },
             { text: 'Crinklepuss', correct: false },
+            { text: 'Sprinkles', correct: true },
             { text: 'Lady Aragorn', correct: false },
             { text: 'Tinkie', correct: false }
         ]
@@ -231,9 +231,9 @@ const questions = [
     {
         question: "At Phyllis' wedding, Michael revealed that her nickname in high school was what?",
         answers: [
-            { text: 'Easy Rider', correct: true },
-            { text: 'Chill Voyager', correct: false },
             { text: 'Free Spirit', correct: false },
+            { text: 'Chill Voyager', correct: false },
+            { text: 'Easy Rider', correct: true },
             { text: 'Carefree Roamer', correct: false }
         ]
     },
@@ -258,9 +258,9 @@ const questions = [
     {
         question: "Schrute boys must learn how many rules before the age of 5?",
         answers: [
-            { text: '40', correct: true },
-            { text: '30', correct: false },
             { text: '50', correct: false },
+            { text: '30', correct: false },
+            { text: '40', correct: true },
             { text: '60', correct: false }
         ]
     },
@@ -276,10 +276,10 @@ const questions = [
     {
         question: "What does Dwight always keep an extra set of in his car for special occasions?",
         answers: [
-            { text: 'Berkenstocks', correct: true },
+            { text: 'Levis', correct: true },
             { text: 'Ray Bans', correct: false },
             { text: 'Converse', correct: false },
-            { text: 'Levis', correct: false }
+            { text: 'Berkenstocks', correct: true }
         ]
     },
 
