@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.min.css" rel="stylesheet">
 </head>
 <body>
-
+<!--Help Container-->
     <section class="info-container">
         <p id="info">Help</p>
         <div id="info-hide">
@@ -21,17 +21,17 @@
             <p>At the end, you'll have a final score, be sure to play again and share with your friends</p>
         </div>
     </section>
-
+<!--Header -->
     <h1 id="header">The Office Quiz</h1>
-    
+<!--Score Container -->
     <div class="hide" id="final-score-container">
         <p>You Scored <span id="final-score"></span></p>
         <p><span id="final-message"></span></p>
     </div>
-
+<!--Timer -->
     <div id="timer" class="hide"></div>
-
-    <div class="container" class="hide" id="main-container">
+<!--Question and Answer Container -->
+    <section class="container" class="hide" id="main-container">
         <div id="question-container" class="hide">
             <div id="question">Question</div>
             <div id="answer-buttons" class="btn-grid">
@@ -45,18 +45,13 @@
             <button id="start-btn" class="start-btn btn">Start</button>
             <button id="next-btn" class="next-btn btn">Next</button>
         </div>
-    </div>
-
-  
-    
-
+    </section>
+<!--Score Container -->
     <div id="score-container" class="hide">
         <p class="scores">Correct Answers <span id="correct-score">0</span> </p>
         <p class="scores">Wrong Answers <span id="wrong-score">0</span> </p>
     </div>
-
-  
-
+</div>
     <script src="assets/scripts/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
 </body>

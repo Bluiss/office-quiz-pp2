@@ -87,6 +87,7 @@
   
   
 
+  
 
 /* question and button styling */
 
@@ -115,7 +116,6 @@
 
 .correct{
   background-color: #68ed8a;
-  border-color: green;
 }
 
 .wrong{

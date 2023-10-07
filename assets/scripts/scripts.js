@@ -86,21 +86,25 @@ function resetState() {
 function selectAnswer(e) {
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
+    const allButtons = answerButtonsElement.querySelectorAll('button');
+    allButtons.forEach(button => {
+        button.removeEventListener('click', selectAnswer);
+    });
+
     setStatusClass(selectedButton, correct);
-    
+
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide');
         scoresContainer.classList.remove('hide');
-        finalScore.classList.add('hide')
+        finalScore.classList.add('hide');
     } else {
-        startButton.innerText = 'restart';
+        startButton.innerText = 'Restart';
         startButton.classList.remove('hide');
         finalScore.classList.remove('hide');
-        finalScoreTally()
-        finalMessageDisplay()
+        finalScoreTally();
+        finalMessageDisplay();
     }
     clearInterval(timerId);
-
 }
 
 //set wrong or correct function
@@ -111,6 +115,10 @@ function setStatusClass(element, correct) {
         incrementCorrect();
     } else {
         element.classList.add('wrong');
+        const correctAnswerButton = answerButtonsElement.querySelector('[data-correct="true"]');
+        if (correctAnswerButton) {
+            correctAnswerButton.classList.add('correct');
+        }
         incrementWrong();
     }
 }
@@ -158,16 +166,12 @@ function gameOver() {
         text: 'Next time, dont be a time theif!',
         type: 'success',
         showCancelButton: false,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
         confirmButtonText: 'Click here to have another go'
       }).then((result) => {
          if(result){
            location.reload();
          }
-      
       })
-      
 }
 
 
