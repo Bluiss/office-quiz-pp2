@@ -295,3 +295,8 @@
 #info-hide p{
   padding: 10px;
 }
+
+#here404 {
+  color: black;
+  text-transform: uppercase;
+}
