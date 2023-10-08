@@ -1,14 +1,12 @@
 # The Office Quiz
 
-👩🏻‍💻 View an example of this section [here](https://github.com/kera-cudmore/Bully-Book-Club#bully-book-club-website)
 
-Add a Blurb about the site here, what does it do, why did you build it?
+A simple quiz to test your knowledge on the hit tv show, the office (US)
 
-Add an image of the finished site here. I like to use [amiresponsive](https://ui.dev/amiresponsive) to get an image of my site on all device sizes, and amiresponsive allows you to click links on the page and scroll, so each device can show a different element of your site.
+![the-office-quoz](readme-images/amiresponsive-index.png)
 
-Add a link to the live site here, for Milestone 1 this will be the GitHub Pages Link from when you deployed the site.
+https://bluiss.github.io/office-quiz-pp2/
 
-If you want to add optional [shields.io](https://shields.io) badges to your README, I like to add them to this section.
 
 ---
 
@@ -25,7 +23,6 @@ If you want to add optional [shields.io](https://shields.io) badges to your READ
 
 * [Features](#features)
   * [General Features on Each Page](#general-features-on-each-page)
-  * [Future Implementations](#future-implementations)
   * [Accessibility](#accessibility)
 
 * [Technologies Used](#technologies-used)
@@ -43,8 +40,6 @@ If you want to add optional [shields.io](https://shields.io) badges to your READ
 * [Credits](#credits)
   * [Code Used](#code-used)
   * [Content](#content)
-  * [Media](#media)
-  * [Acknowledgments](#acknowledgments)
 
 ---
 
