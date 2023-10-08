@@ -38,8 +38,15 @@
     justify-content: center;
     position: absolute;
     top: 10px;
-    padding-bottom: 10px;
-    
+    padding: 10px;
+    margin: 0;
+  }
+
+  @media only screen and (max-width: 768px) {
+    #header {
+      padding: 5px;
+      margin-top: 1;
+    }
   }
 
 /* intro flex styling */
@@ -201,7 +208,14 @@
   #question {
     font-size: 18px;
   }
+  #score-container,
+  #timer {
+    margin: 0;
+    padding: 25px; 
+  }
 }
+
+
 
 /* game over container  */
 
@@ -230,7 +244,7 @@
 
 .info-container{
   position: absolute; 
-  top: 15px; 
+  bottom: 1px; 
   left: 10px;
   display: flex;
   padding: 1px;
@@ -242,9 +256,14 @@
 
 #info:hover + #info-hide {
   display: block;
-  cursor: pointer;
+  cursor:help;
   text-align: center ;
 }
+
+#info:hover{
+  display: none;
+}
+
 
 #info-hide{
   font-size: 12px;
