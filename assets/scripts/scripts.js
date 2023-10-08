@@ -1,15 +1,17 @@
+/*jshint esversion: 6 */
+
 const startButton = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
 const questionContainerElement = document.getElementById('question-container');
-const conatiner = document.getElementById('main-container')
+const conatiner = document.getElementById('main-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
 const scoresContainer = document.getElementById('score-container');
 const timerContainer = document.getElementById('timer');
 const container = document.getElementById('main-container');
 const gameOverDiv = document.getElementById('game-over');
-const finalScore = document.getElementById('final-score-container')
-const finalMessage = document.getElementById('final-message')
+const finalScore = document.getElementById('final-score-container');
+const finalMessage = document.getElementById('final-message');
 
 
 let shuffledQuestions, currentQuestionIndex;
@@ -21,19 +23,19 @@ let timerId = null;
 // how to play show
 
 function howToShow(){
-    const howTo = document.getElementById('how-to-content')
-    howTo.classList.remove('hide')
+    const howTo = document.getElementById('how-to-content');
+    howTo.classList.remove('hide');
 }
 
 function howToHide(){
-    const howTo = document.getElementById('how-to-content')
-    howTo.classList.add('hide')
+    const howTo = document.getElementById('how-to-content');
+    howTo.classList.add('hide');
 }
 
 
 // start game 
 startButton.addEventListener('click', startGame);
-nextButton.classList.add('hide')
+nextButton.classList.add('hide');
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++;
     setNextQuestion();
@@ -41,8 +43,8 @@ nextButton.addEventListener('click', () => {
 
 function startGame() {
     startButton.classList.add('hide');
-    nextButton.classList.remove('hide')
-    shuffledQuestions = questions.sort(() => Math.random() - .5);
+    nextButton.classList.remove('hide');
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
     questionContainerElement.classList.remove('hide');
     timerContainer.classList.remove('hide');
@@ -61,7 +63,7 @@ function resumeCountdown() {
 function setNextQuestion() {
     resetState();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
-    timeLeft = 10
+    timeLeft = 10;
     resumeCountdown();
 
 }
@@ -88,7 +90,7 @@ function showQuestion(question) {
 // reset next question 
 function resetState() {
     clearStatusClass(document.body);
-    finalScore.classList.add('hide')
+    finalScore.classList.add('hide');
     nextButton.classList.add('hide');
     scoresContainer.classList.add('hide');
     while (answerButtonsElement.firstChild) {
@@ -187,7 +189,7 @@ function gameOver() {
          if(result){
            location.reload();
          }
-      })
+      });
 }
 
 
@@ -195,7 +197,7 @@ function gameOver() {
 
 // final score
 function finalScoreTally() {
-    const tallySecond = "/10"
+    const tallySecond = "/10";
     const correctScore = parseInt(document.getElementById('correct-score').innerText);
     let totalScore = parseInt(document.getElementById('final-score').innerText);
     document.getElementById('final-score').innerText = correctScore + tallySecond;
@@ -204,9 +206,9 @@ function finalScoreTally() {
 
 // final message
 
-const lowScore = "Not good at all, how very Impish of you"
-const midScore = "Well, you tried, and that's what counts, right? At least you're not Toby."
-const highScore = "Excellent score, quite Admirable of you"
+const lowScore = "Not good at all, how very Impish of you";
+const midScore = "Well, you tried, and that's what counts, right? At least you're not Toby.";
+const highScore = "Excellent score, quite Admirable of you";
 
 
 function finalMessageDisplay(){
@@ -320,3 +322,4 @@ const questions = [
     },
 ];
 
+  

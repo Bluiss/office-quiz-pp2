@@ -1,4 +1,4 @@
-# PROJECT NAME TO GO HERE
+# The Office Quiz
 
 👩🏻‍💻 View an example of this section [here](https://github.com/kera-cudmore/Bully-Book-Club#bully-book-club-website)
 
@@ -50,37 +50,49 @@ If you want to add optional [shields.io](https://shields.io) badges to your READ
 
 ## User Experience (UX)
 
-👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/Bully-Book-Club#user-experience-ux)
+### Initial Discusion
+
+The Office Quiz is an online quiz that is themed around the US TV show "the office", It aims to test your knowledge around the show and its characters. You are able to keep track of your score as you make complete the quiz.
+
+Key information
+
+- How to play section
+- Begin Section
+- Scores section
+- Question section
+- Answer section
 
 ### User Stories
 
-Add your user stories here. You want to include first time visitors and returning visitors here as a minimum. Think about each group, and the experience and journey you want them to have on your site. It really helps to think about this before you start coding, and will really help with creating your wireframes.
+# First-time visitors
+
+- Understand what theme the questions relate to
+- Understand how to answer questions
+- Check the score at the end
+
+# Returning Visitor
+
+- Compare score to last visit
+
 
 ## Design
 
-👩🏻‍💻 View an example of a completed design section [here](https://github.com/kera-cudmore/earth-day-hackathon-2022#Design)
 
 ### Colour Scheme
 
-Add all information about your colour scheme for your site here. You can explain why you choose the colours you did?
+The color scheme is a collection of pastel colors to emulate the theme of the office intro
 
-I like to include a palette of the colour scheme here, my favourite site for creating a colour palette is [coolors](https://coolors.co/), but there are lots of other sites that also do the same thing, like [ColorSpace](https://mycolor.space/?hex=%23F5F5F5&sub=1), [Muzli Colors](https://colors.muz.li/), [Adobe Colour Wheel](https://color.adobe.com/create/color-wheel) and [Canva](https://www.canva.com/colors/color-palette-generator/) to name a few.
+![color pallete](<readme-images/office quiz.png>)
 
 ### Typography
 
-If you've imported fonts to use in your project, add some information about them here. You can include information like:
+Google Fonts was used for all fonts:
 
-Why did you choose the font you have?
-Is this an accessibly friendly font?
-What weights have you included?
-
-I also like to include an image of the fonts chosen as a reference.
-
-[Google Fonts](https://fonts.google.com/) is a popular choice for importing fonts to use in your project, as it doesn't require you to download the fonts to use them.
+- Courier, Arial, Helvetica, sans-serif;
 
 ### Imagery
 
-Use this section to explain what sort of imagery you plan to use through your site.
+- No images were used
 
 ### Wireframes
 
@@ -92,47 +104,42 @@ Some other options include [Figma](https://www.figma.com/), [AdobeXD](https://ww
 
 ## Features
 
-👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/TheQuizArms#Features)
+The website comprises two main pages a welcome page and a quiz page.
 
-This section can be used to explain what pages your site is made up of.
+### Welcome Page
 
-### General features on each page
+- The welcome page has two main sections, hovering over how to play highlights a list of rules and tips that aid in playing the quiz
+- A simple begin button that directs the user to quiz.html
 
-If there is a feature that appears on all pages of your site, include it here. Examples of what to include would the the navigation, a footer and a favicon.
+### Quiz page
 
-I then like to add a screenshot of each page of the site here, i use [amiresponsive](https://ui.dev/amiresponsive) which allows me to grab an image of the site as it would be displayed on mobile, tablet and desktop, this helps to show the responsiveness of the site.
-
-### Future Implementations
-
-What features would you like to implement in the future on your site? Would you like to add more pages, or create login functionality? Add these plans here.
-
+- A dynamic field that shows the different questions
+- 4 different answers depending on the questions presented
+- A timer that counts down from 10, stops when the answer is selected and refreshed when the next button is selected
+- A tally that shows either the correct or wrong score
+- A final dynamic message that changes depending on the final score of the user
+- Reset/Start/Next buttons
 ### Accessibility
 
-Be an amazing developer and get used to thinking about accessibility in all of your projects!
+I have been mindful during coding to ensure that the website is as accessible friendly as possible. I have achieved this by:
 
-This is the place to make a note of anything you have done with accessibility in mind. Some examples include:
-
-Have you used icons and added aria-labels to enable screen readers to understand these?
-Have you ensured your site meets the minimum contrast requirements?
-Have you chosen fonts that are dyslexia/accessible friendly?
-
-Code Institute have an amazing channel for all things accessibility (a11y-accessibility) I would highly recommend joining this channel as it contains a wealth of information about accessibility and what we can do as developers to be more inclusive.
+- Using semantic HTML.
+- Contrasting colors and constant feedback
 
 ## Technologies Used
 
-👩🏻‍💻 View an example of a completed Technologies Used section [here](https://github.com/kera-cudmore/Bully-Book-Club#Technologies-Used)
+### Languages used
 
-### Languages Used
+- HTML, CSS & JavaScript were used to create this website.
 
-Make a note here of all the languages used in creating your project. For the first project this will most likely just be HTML & CSS.
+### Frameworks, Libraires & Programs
 
-### Frameworks, Libraries & Programs Used
-
-Add any frameworks, libraries or programs used while creating your project.
-
-Make sure to include things like git, GitHub, the program used to make your wireframes, any programs used to compress your images, did you use a CSS framework like Bootstrap? If so add it here (add the version used).
-
-A great tip for this section is to include them as you use them, that way you won't forget what you ended up using when you get to the end of your project.
+- Balsamiq - Used to create wireframes.
+- Git - For version control.
+- Github - To save and store the files for the website.
+- Google Fonts - To import the fonts used on the website.
+- Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
+- SweetAlert2 Library
 
 ## Deployment & Local Development
 
@@ -140,46 +147,48 @@ A great tip for this section is to include them as you use them, that way you wo
 
 ### Deployment
 
-Include instructions here on how to deploy your project. For your first project you will most likely be using GitHub Pages.
+Github Pages was used to deploy the live website. The instructions to achieve this are below:
 
-### Local Development
+1. Log in (or sign up) to Github.
+2. Find the repository for this project, office-quiz-pp2
+3. Click on the Settings link.
+4. Click on the Pages link in the left-hand side navigation bar.
+5. In the Source section, choose main from the drop down select branch menu. Select Root from the drop down select folder menu.
+6. Click Save. Your live Github Pages site is now deployed at the URL shown.
 
-The local development section gives instructions on how someone else could make a copy of your project to play with on their local machine. This section will get more complex in the later projects, and can be a great reference to yourself if you forget how to do this.
+## Local Deployment
 
-#### How to Fork
+### How to Fork
 
-Place instructions on how to fork your project here.
+To fork the the office quiz repository:
 
-#### How to Clone
+1. Log in (or sign up) to Github.
+2. Go to the repository for this project, bluiss/office-quiz-pp2
+3. Click the Fork button in the top right corner.
 
-Place instructions on how to clone your project here.
+### How to clone
+
+To clone the office quiz repository:
+
+1. Log in (or sign up) to GitHub.
+2. Go to the repository for this project, bluiss/office-quiz-pp2
+3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+
 
 ## Testing
 
-Start as you mean to go on - and get used to writing a TESTING.md file from the very first project!
-
-Testing requirements aren't massive for your first project, however if you start using a TESTING.md file from your first project you will thank yourself later when completing your later projects, which will contain much more information.
-  
-Use this part of the README to link to your TESTING.md file - you can view the example TESTING.md file [here](milestone1-testing.md)
+Full testing doc here TESTING.md
 
 ## Credits
 
-👩🏻‍💻 View an example of a completed Credits section [here](https://github.com/kera-cudmore/BookWorm#Credits)
-
-The Credits section is where you can credit all the people and sources you used throughout your project.
-
 ### Code Used
 
-If you have used some code in your project that you didn't write, this is the place to make note of it. Credit the author of the code and if possible a link to where you found the code. You could also add in a brief description of what the code does, or what you are using it for here.
+
+- Framework for question logic - https://github.com/WebDevSimplified/JavaScript-Quiz-App
 
 ### Content
 
-Who wrote the content for the website? Was it yourself - or have you made the site for someone and they specified what the site was to say? This is the best place to put this information.
+Combination of myself and questions pulled from https://www.goodhousekeeping.com/life/entertainment/a40679561/the-office-trivia-quiz/
 
-###  Media
-
-If you have used any media on your site (images, audio, video etc) you can credit them here. I like to link back to the source where I found the media, and include where on the site the image is used.
-  
-###  Acknowledgments
-
-If someone helped you out during your project, you can acknowledge them here! For example someone may have taken the time to help you on slack with a problem. Pop a little thank you here with a note of what they helped you with (I like to try and link back to their GitHub or Linked In account too). This is also a great place to thank your mentor and tutor support if you used them.
