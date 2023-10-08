@@ -76,13 +76,19 @@
     }
   }
 
+  #how-to-content{
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 24px;
+    color: black;
+  }
+
   .how-to-play + .how-to-play {
     display: none;
   }
   
   .how-to-play:hover + .how-to-play {
     display: block;
-    cursor: pointer;
     text-align: center ;
   }
   
@@ -238,6 +244,13 @@
 
 }
 
+@media only screen and (max-width: 768px) {
+  .btn {
+    padding: 10px 20px; 
+    font-size: 14px; 
+  }
+}
+
 
 
 /* question and button styling */
@@ -247,7 +260,7 @@
   bottom: 1px; 
   left: 10px;
   display: flex;
-  padding: 1px;
+  padding: 10px;
 }
 
 #info + #info-hide {
@@ -262,6 +275,10 @@
 
 #info:hover{
   display: none;
+}
+
+#info{
+  padding: 10px;
 }
 
 

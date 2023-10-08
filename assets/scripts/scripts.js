@@ -11,11 +11,24 @@ const gameOverDiv = document.getElementById('game-over');
 const finalScore = document.getElementById('final-score-container')
 const finalMessage = document.getElementById('final-message')
 
+
 let shuffledQuestions, currentQuestionIndex;
 
 let timeLeft = 10;
 let countdownDisplay = document.getElementById('timer');
 let timerId = null;
+
+// how to play show
+
+function howToShow(){
+    const howTo = document.getElementById('how-to-content')
+    howTo.classList.remove('hide')
+}
+
+function howToHide(){
+    const howTo = document.getElementById('how-to-content')
+    howTo.classList.add('hide')
+}
 
 
 // start game 
