@@ -48,6 +48,8 @@ function startGame() {
     timerContainer.classList.remove('hide');
     setNextQuestion();
     countdown();
+    document.getElementById('correct-score').innerText = '0';
+    document.getElementById('wrong-score').innerText = '0';
 }
 
 function resumeCountdown() {
@@ -116,6 +118,7 @@ function selectAnswer(e) {
         finalScore.classList.remove('hide');
         finalScoreTally();
         finalMessageDisplay();
+        
     }
     clearInterval(timerId);
 }
