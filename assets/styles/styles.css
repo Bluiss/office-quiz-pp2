@@ -256,7 +256,7 @@
 
 .info-container{
   position: absolute; 
-  bottom:10px; 
+  bottom:1px; 
   left: 1px;
   display: flex;
   padding: 10px;
@@ -265,8 +265,6 @@
 
 
 #info{
-  padding: 10px;
-  height: 100px;
   width: 100px;
 }
 
