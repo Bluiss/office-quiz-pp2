@@ -32,6 +32,17 @@ function howToHide(){
     howTo.classList.add('hide');
 }
 
+// info show and hide
+function howToShowInfo(){
+    const howTo = document.getElementById('info-hide');
+    howTo.classList.remove('hide');
+}
+
+function howToHideInfo(){
+    const howTo = document.getElementById('info-hide');
+    howTo.classList.add('hide');
+}
+
 
 // start game 
 startButton.addEventListener('click', startGame);

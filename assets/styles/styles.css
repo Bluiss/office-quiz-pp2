@@ -167,7 +167,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   padding: 10px 20px;
-  margin-left: 30px;
+
 }
 
 .controls {
@@ -256,28 +256,18 @@
 
 .info-container{
   position: absolute; 
-  bottom: 1px; 
-  left: 10px;
+  top: 10px; 
+  left: 1px;
   display: flex;
   padding: 10px;
 }
 
-#info + #info-hide {
-  display: none;
-}
 
-#info:hover + #info-hide {
-  display: block;
-  cursor:help;
-  text-align: center ;
-}
-
-#info:hover{
-  display: none;
-}
 
 #info{
   padding: 10px;
+  height: 100px;
+  width: 100px;
 }
 
 
@@ -285,9 +275,8 @@
   font-size: 12px;
   background-color: aliceblue;
   border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  margin-top: 150px;
+  text-align: center;
+  margin-top: 15px;
   border-radius: 24px;
 }
 
