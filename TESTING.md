@@ -97,12 +97,12 @@ And answers | Shows correct answers                                 | Pass      
 
 ## BUGS
 
-### Known Bugs
-
-List (or put in a table) all known bugs on your site here as soon as you find them. This will prevent you from forgetting any at the end. Some (if not all) of these bugs will hopefully make their way over to the next section, solved bugs, as you progress through your project.
-
-### Solved Bugs
-
-👩🏻‍💻View an example of a completed bugs section [here](https://github.com/kera-cudmore/BookWorm/blob/main/TESTING.md#BUGS)
-
-This is where all solved bugs go once squashed. List what the bug was, and how you managed to fix it. You can also include images/videos here if you wanted.
+| Known Bugs                                              | Resolved                                                                                                                                                                                                         |
+| ------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Timer and score divs, wouldn’t align on mobile          | Yes, removed margin and increased padding using a media query for smaller screens                                                                                                                                |
+| Total score would carry through each reset of questions | Yes, reset innerHTML of those values to 0 on each reset (See JS)                                                                                                                                                 |
+| Score would increase by 4                               | only increment scores based on the button that was clicked, not all the buttons.                                                                                                                                 |
+| Timer starts when page is loaded                        | Add eventlistner to start button that calls timer function                                                                                                                                                       |
+| Final score only shwoing 0                              | You're trying to fetch the correctScore value immediately when the script runs (i.e., before the game starts). Therefore, the correctScore will always be the initial value set in the DOM, which is probably 0. |
+|                                                         |                                                                                                                                                                                                                  |
+|                                                         |                                                                                                                                                                                                                  |
