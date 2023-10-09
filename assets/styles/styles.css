@@ -256,7 +256,7 @@
 
 .info-container{
   position: absolute; 
-  top: 10px; 
+  bottom:10px; 
   left: 1px;
   display: flex;
   padding: 10px;
@@ -276,7 +276,7 @@
   background-color: aliceblue;
   border: 1px solid black;
   text-align: center;
-  margin-top: 15px;
+  position: absolute;
   border-radius: 24px;
 }
 
