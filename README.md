@@ -91,12 +91,8 @@ Google Fonts was used for all fonts:
 
 ### Wireframes
 
-Add the images or links for your wireframes here.
-
-There are lots of different options to create your wireframes - Code Institute students can access [Balsamiq](https://balsamiq.com/) as part of the course.
-
-Some other options include [Figma](https://www.figma.com/), [AdobeXD](https://www.adobe.com/products/xd.html), [Sketch](https://www.sketch.com/?utm_source=google&utm_medium=cpc&adgroup=uxui&device=c&matchtype=e&utm_campaign=ADDICTMOBILE_SKETCH_GAD_DG_UK_T1_ALWAYS-ON_S_TRF_PROS_BRAND&utm_term=sketch&utm_source=google&utm_medium=cpc&utm_content=TOF_BRND__generic&hsa_acc=8710913982&hsa_cam=16831089317&hsa_grp=134620695759&hsa_ad=592060065319&hsa_src=g&hsa_tgt=kwd-14921750&hsa_kw=sketch&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjwr4eYBhDrARIsANPywCjRIFn93DMezYnsyE5Fic_8l8kynJtut0GYMU01TiohHjwziFtlH0gaAhteEALw_wcB) and [Mockup](https://apps.apple.com/us/app/mockup-sketch-ui-ux/id1527554407) to name just a few! Or you can even go old school and get those wireframes completed using pen and paper. Just snap an image of the completed wireframes to add the images to the README.
-
+![homepage-wireframe](readme-images/homepage-wireframe.png)
+![quiz-wireframe](readme-images/quiz-wireframe.png)
 ## Features
 
 The website comprises two main pages a welcome page and a quiz page.
@@ -105,6 +101,7 @@ The website comprises two main pages a welcome page and a quiz page.
 
 - The welcome page has two main sections, hovering over how to play highlights a list of rules and tips that aid in playing the quiz
 - A simple begin button that directs the user to quiz.html
+![home-page](<readme-images/Homepage .png>)
 
 ### Quiz page
 
@@ -114,6 +111,11 @@ The website comprises two main pages a welcome page and a quiz page.
 - A tally that shows either the correct or wrong score
 - A final dynamic message that changes depending on the final score of the user
 - Reset/Start/Next buttons
+
+![quiz-start](readme-images/quiz-start.png)
+![quiz-correct](readme-images/question-answered-correct.png) 
+![quiz-incorrect](readme-images/question-answered-wrong.png) 
+![quiz-unaswered](readme-images/questions-unanswered.png) 
 ### Accessibility
 
 I have been mindful during coding to ensure that the website is as accessible friendly as possible. I have achieved this by:
