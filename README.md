@@ -176,7 +176,7 @@ To clone the office quiz repository:
 
 ## Testing
 
-Full testing doc here TESTING.md
+Full testing doc here [Testing.MD](TESTING.md)
 
 ## Credits
 
