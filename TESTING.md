@@ -36,7 +36,9 @@ css - pass
 ![css-validation](readme-images/css-validation.png)
 ### Lighthouse
 
+![index-lighthouse](readme-images/index-lighthouse.png)
 
+![quiz-lighthouse](readme-images/quiz-lighthouse.png)
 ### JavaScript 
 
 Jshint - pass 
