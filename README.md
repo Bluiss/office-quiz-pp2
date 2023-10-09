@@ -131,7 +131,7 @@ I have been mindful during coding to ensure that the website is as accessible fr
 
 ### Frameworks, Libraires & Programs
 
-- Balsamiq - Used to create wireframes.
+- Figma - Used to create wireframes.
 - Git - For version control.
 - Github - To save and store the files for the website.
 - Google Fonts - To import the fonts used on the website.
